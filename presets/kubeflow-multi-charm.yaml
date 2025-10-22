@@ -1,30 +1,5 @@
 - branch: main
   charms:
-  - name: admission_webhook
-    path: .
-  url: https://github.com/canonical/admission-webhook-operator
-- branch: main
-  charms:
-  - name: argo_controller
-    path: charms/argo-controller
-  url: https://github.com/canonical/argo-operators
-- branch: main
-  charms:
-  - name: dex_auth
-    path: .
-  url: https://github.com/canonical/dex-auth-operator
-- branch: main
-  charms:
-  - name: envoy
-    path: .
-  url: https://github.com/canonical/envoy-operator
-- branch: main
-  charms:
-  - name: github_profiles_automator
-    path: .
-  url: https://github.com/canonical/github-profiles-automator
-- branch: main
-  charms:
   - name: istio_gateway
     path: charms/istio-gateway
   - name: istio_pilot
@@ -69,16 +44,15 @@
   url: https://github.com/canonical/knative-operators
 - branch: main
   charms:
-  - name: kserve_controller
-    path: charms/kserve-controller
-  url: https://github.com/canonical/kserve-operators
+  - name: tensorboard_controller
+    path: charms/tensorboard-controller
+  - name: tensorboards_web_app
+    path: charms/tensorboards-web-app
+  url: https://github.com/canonical/kubeflow-tensorboards-operator
 - branch: main
   charms:
-  - name: kubeflow_dashboard
-    path: .
-  url: https://github.com/canonical/kubeflow-dashboard-operator
-- branch: main
-  charms:
-  - name: kubeflow_profiles
-    path: .
-  url: https://github.com/canonical/kubeflow-profiles-operator
+  - name: jupyter_controller
+    path: charms/jupyter-controller
+  - name: jupyter_ui
+    path: charms/jupyter-ui
+  url: https://github.com/canonical/notebook-operators

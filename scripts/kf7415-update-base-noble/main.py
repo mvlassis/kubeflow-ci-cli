@@ -19,7 +19,7 @@ with open("./credentials.json", "r") as fid:
 tmp_folder = f"/home/ubuntu/tmp/kfcicli/charm_repos"
 logger.info(f"Using temporary directory: {tmp_folder}")
 
-filename=Path("../../presets/kubeflow-part2.yaml")
+filename=Path("../../presets/kubeflow-full.yaml")
 
 client = KubeflowCI.read(
     filename=filename,
